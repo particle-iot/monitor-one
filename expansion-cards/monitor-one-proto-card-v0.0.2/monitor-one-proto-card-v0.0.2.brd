@@ -195,7 +195,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6cGFydGljbGUx" projecturn="a.YnVzaW5lc3M6cGFydGljbGUxIzIwMjExMDIyNDU4Mzc2MDAx" f3durn="urn:adsk.wipprod:dm.lineage:waHep7nsTW6_OTyA5JVq8g" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="a2dc9e37-5bb6-41e8-9687-faab63a91486" lastsyncedrevisionid="a2dc9e37-5bb6-41e8-9687-faab63a91486" lastboardhashguid="8a23b806-5d7e-d70a-d944-b800a59010fc" lastpushedtime="2021-11-23T01:36:20Z" linktopcb3d="true"/>
+<fusionsync huburn="a.YnVzaW5lc3M6cGFydGljbGUx" projecturn="a.YnVzaW5lc3M6cGFydGljbGUxIzIwMjExMDIyNDU4Mzc2MDAx" f3durn="urn:adsk.wipprod:dm.lineage:waHep7nsTW6_OTyA5JVq8g" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="a2dc9e37-5bb6-41e8-9687-faab63a91486" lastsyncedrevisionid="a2dc9e37-5bb6-41e8-9687-faab63a91486" lastboardhashguid="8a23b806-5d7e-d70a-d944-b800a59010fc" lastpushedtime="2021-11-23T01:36:20Z" linktopcb3d="false"/>
 <plain>
 <wire x1="3" y1="0" x2="47" y2="0" width="0.0254" layer="20"/>
 <wire x1="0" y1="3" x2="0" y2="87" width="0.0254" layer="20"/>
@@ -655,49 +655,52 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <clearance class="3" value="0.1524"/>
 </class>
 </classes>
-<designrules name="particle-2layer *">
-<description language="en">&lt;b&gt;Particle Design Rules&lt;/b&gt;
-&lt;p&gt;
-2-Layer design rule</description>
+<designrules name="jlcpcb-2layers">
+<description language="en">&lt;b&gt;JLCPCB design rules (2 layers)&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Board thickness: 1.6mm&lt;/li&gt;
+&lt;li&gt;Copper weight: 1oz (35um)&lt;/li&gt;
+&lt;li&gt;Note: annular ring aren't minimal&lt;/li&gt;
+&lt;/ul&gt;</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 1.1mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.195mm"/>
-<param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
-<param name="mdWireVia" value="6mil"/>
-<param name="mdPadPad" value="6mil"/>
-<param name="mdPadVia" value="6mil"/>
-<param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
-<param name="mdSmdVia" value="6mil"/>
-<param name="mdSmdSmd" value="6mil"/>
-<param name="mdViaViaSameLayer" value="8mil"/>
+<param name="mtIsolate" value="1.6mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="5mil"/>
+<param name="mdWirePad" value="5mil"/>
+<param name="mdWireVia" value="5mil"/>
+<param name="mdPadPad" value="5mil"/>
+<param name="mdPadVia" value="5mil"/>
+<param name="mdViaVia" value="5mil"/>
+<param name="mdSmdPad" value="5mil"/>
+<param name="mdSmdVia" value="5mil"/>
+<param name="mdSmdSmd" value="5mil"/>
+<param name="mdViaViaSameLayer" value="6mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="6mil"/>
+<param name="mdCopperDimension" value="0.2mm"/>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
+<param name="msWidth" value="5mil"/>
 <param name="msDrill" value="0.3mm"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msMicroVia" value="0.3mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
-<param name="rvPadTop" value="0.25"/>
-<param name="rvPadInner" value="0.25"/>
-<param name="rvPadBottom" value="0.25"/>
-<param name="rvViaOuter" value="0.25"/>
-<param name="rvViaInner" value="0.25"/>
-<param name="rvMicroViaOuter" value="0.25"/>
-<param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="12mil"/>
-<param name="rlMaxPadTop" value="20mil"/>
+<param name="rvPadTop" value="0.4"/>
+<param name="rvPadInner" value="0"/>
+<param name="rvPadBottom" value="0.4"/>
+<param name="rvViaOuter" value="0"/>
+<param name="rvViaInner" value="0"/>
+<param name="rvMicroViaOuter" value="0"/>
+<param name="rvMicroViaInner" value="0"/>
+<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMaxPadTop" value="80mil"/>
 <param name="rlMinPadInner" value="10mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="12mil"/>
-<param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMaxPadBottom" value="80mil"/>
+<param name="rlMinViaOuter" value="3mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
 <param name="rlMinViaInner" value="8mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMinMicroViaOuter" value="3mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
 <param name="rlMinMicroViaInner" value="4mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
@@ -708,19 +711,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="0mil"/>
-<param name="mlMaxStopFrame" value="0mil"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="20mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
-<param name="slThermalIsolate" value="8mil"/>
+<param name="slThermalIsolate" value="10mil"/>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkAngle" value="1"/>
+<param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
@@ -2467,33 +2470,33 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="4,1,19a49c0da8b1c677"/>
-<approved hash="4,1,c3e84f57a1facd38"/>
-<approved hash="4,1,56c4c54d76558a37"/>
-<approved hash="4,1,d8f1158b2eaedf14"/>
-<approved hash="4,1,753a4e3eb61c99f3"/>
-<approved hash="4,1,6d0f6cedace291c0"/>
-<approved hash="4,1,08c8f1a1c6452d2c"/>
-<approved hash="4,1,b6bf7dbe364d34f8"/>
-<approved hash="4,16,19a49c0da8b1c677"/>
-<approved hash="4,16,c3e84f57a1facd38"/>
-<approved hash="4,16,56c4c54d76558a37"/>
-<approved hash="4,16,d8f1158b2eaedf14"/>
-<approved hash="4,16,753a4e3eb61c99f3"/>
-<approved hash="4,16,6d0f6cedace291c0"/>
-<approved hash="4,16,08c8f1a1c6452d2c"/>
-<approved hash="4,16,b6bf7dbe364d34f8"/>
-<approved hash="19,1,481061c170eef0cb"/>
-<approved hash="19,1,d7d2f05c1976970c"/>
-<approved hash="19,1,0e440d3e95329648"/>
-<approved hash="19,1,089fb44e3dac3575"/>
-<approved hash="19,1,beeafa00c5c83571"/>
-<approved hash="5,1,48ef1a95855837e4"/>
-<approved hash="5,1,791d4bb0ab8d7b3b"/>
 <approved hash="23,1,8867852785c18881"/>
 <approved hash="23,1,3cfecd3ecb3a3afa"/>
 <approved hash="23,1,2c537f9ef66e0dfa"/>
 <approved hash="23,1,5a10f37f704f90db"/>
+<approved hash="4,1,7fe803d31fcacbd0"/>
+<approved hash="4,1,eb895c6089c21d01"/>
+<approved hash="4,1,e6a7b42c1f9b48e0"/>
+<approved hash="4,1,80b5d44b5049f4b2"/>
+<approved hash="4,1,325d3934cb908c89"/>
+<approved hash="4,1,c7454a286ae711be"/>
+<approved hash="4,1,011a00d86ae791e0"/>
+<approved hash="4,1,b4c9bf9cbe187712"/>
+<approved hash="4,1,c120f240eb1b159b"/>
+<approved hash="4,1,34bc6812134d8dbc"/>
+<approved hash="4,16,b4c9bf9cbe187712"/>
+<approved hash="4,16,c120f240eb1b159b"/>
+<approved hash="4,16,34bc6812134d8dbc"/>
+<approved hash="4,16,7fe803d31fcacbd0"/>
+<approved hash="4,16,eb895c6089c21d01"/>
+<approved hash="4,16,e6a7b42c1f9b48e0"/>
+<approved hash="4,16,80b5d44b5049f4b2"/>
+<approved hash="4,16,325d3934cb908c89"/>
+<approved hash="19,1,f0a8026ddc267b0d"/>
+<approved hash="19,1,2389d6e3fec75e43"/>
+<approved hash="19,1,f197f2958e818d83"/>
+<approved hash="19,1,47b137d876136738"/>
+<approved hash="19,1,7d0b08dc6ef9b2f6"/>
 </errors>
 </board>
 </drawing>
